@@ -661,6 +661,15 @@ body.mobile-nav-active #mobile-nav-toggle {
     border-radius: 25px;
 }
 
+@media (max-width: 768px) {
+    #about .about-container img {
+        height: 400px;
+        width: 200px;
+        margin-left: 150px;
+        border-radius: 25px;
+    }
+}
+
 #about .about-container .content {
     background: #fff;
 }
@@ -703,6 +712,12 @@ body.mobile-nav-active #mobile-nav-toggle {
     height: 200px;
     position: relative;
     background: #fafafa;
+}
+
+@media (max-width: 768px) {
+    #herramientas .box {
+        min-height: 400px;
+    }
 }
 
 #herramientas .icon {
@@ -896,12 +911,27 @@ body.mobile-nav-active #mobile-nav-toggle {
 #contact .info {
     color: #333333;
     display: flex;
-    width: 600px;
+    /* width: 650px; */
+}
+
+@media (max-width: 768px) {
+    #contact .info {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    #contact .info {
+        width: 650px;
+    }
+    #contact .container .info {
+        margin-left: -100px;
+    }
 }
 
 #contact .info p {
     margin-right: 15px;
-    min-width: 200px;
+    /* min-width: 200px; */
 }
 
 #contact .info i {
