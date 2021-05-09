@@ -102,6 +102,36 @@ jQuery(document).ready(function($) {
             }
         }
     });
+    /* Scrollspy */
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 0 && scroll <= 820) {
+            $(".scroll-hero").addClass("menu-active");
+        } else {
+            $(".scroll-hero").removeClass("menu-active");
+        }
+        if (scroll >= 840 && scroll <= 1600) {
+            $(".scroll-about").addClass("menu-active");
+        } else {
+            $(".scroll-about").removeClass("menu-active");
+        }
+        if (scroll >= 1650 && scroll <= 2440) {
+            $(".scroll-herramientas").addClass("menu-active");
+        } else {
+            $(".scroll-herramientas").removeClass("menu-active");
+        }
+        if (scroll >= 2480 && scroll <= 3300) {
+            $(".scroll-portfolio").addClass("menu-active");
+        } else {
+            $(".scroll-portfolio").removeClass("menu-active");
+        }
+        if (scroll >= 3300) {
+            $(".scroll-contact").addClass("menu-active");
+        } else {
+            $(".scroll-contact").removeClass("menu-active");
+        }
+    });
 
 
     // jQuery counterUp

@@ -28,7 +28,7 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#list-example" data-bs-offset="0" class="menu-active" tabindex="0">
 
     <!--==========================
   Header
@@ -49,14 +49,18 @@
             </div>
 
             <nav id="nav-menu-container">
-                <ul class="nav-menu">
-                    <li class="menu-active"><a href="#hero">Inicio</a></li>
-                    <li><a href="#about">Sobre mi</a></li>
-                    <li><a href="#herramientas">Herramientas</a></li>
-                    <li><a href="#portfolio">Portafolio</a></li>
-                    <li><a href="#contact">Contacto</a></li>
+                <ul class="nav-menu" role="tablist">
+
+                    <li class="scroll-hero menu-active"><a href="#hero">Inicio</a></li>
+                    <li class="scroll-about"><a href="#about">Sobre mi</a></li>
+                    <li class="scroll-herramientas"><a href="#herramientas">Herramientas</a></li>
+                    <li class="scroll-portfolio"><a href="#portfolio">Portafolio</a></li>
+                    <li class="scroll-contact"><a href="#contact">Contacto</a></li>
+
                 </ul>
+
             </nav>
+
             <!-- #nav-menu-container -->
         </div>
     </header>
@@ -102,9 +106,10 @@
 
                     </div>
 
-                    <div class="col-lg-6  order-lg-2 order-1 wow fadeInRight">
+                    <div class="d-flex justify-content-center col-lg-6  order-lg-2 order-1 wow fadeInRight">
                         <img src="./img/sobre-mi.jpg" alt="" class="img-fluid img-thumbnail card">
                     </div>
+
                 </div>
 
             </div>
@@ -394,6 +399,7 @@
     <script src="lib/jquery/jquery.min.js "></script>
     <script src="lib/jquery/jquery-migrate.min.js "></script>
     <script src="lib/bootstrap/js/bootstrap.bundle.min.js "></script>
+
     <script src="lib/easing/easing.min.js "></script>
     <script src="lib/wow/wow.min.js "></script>
     <script src="lib/waypoints/waypoints.min.js "></script>
@@ -401,8 +407,9 @@
     <script src="lib/superfish/hoverIntent.js "></script>
     <script src="lib/superfish/superfish.min.js "></script>
 
-    <!-- Contact Form JavaScript File -->
-    <script src="contactform/contactform.js "></script>
+
+
+
 
     <!-- Template Main Javascript File -->
     <script src="js/main.js "></script>
