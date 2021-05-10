@@ -143,6 +143,12 @@ div.codepen {
     align-items: baseline;
 }
 
+@media (max-width: 768px) {
+    #header #logo {
+        display: none;
+    }
+}
+
 div.codepen svg {
     position: absolute;
     height: 30px;
@@ -666,8 +672,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     #about .about-container img {
         height: 400px;
         width: 200px;
-        margin-left: 150px;
         border-radius: 25px;
+        margin: auto;
     }
 }
 
