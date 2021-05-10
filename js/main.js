@@ -105,7 +105,12 @@ jQuery(document).ready(function($) {
     /* Scrollspy */
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
+        var vh = (window.scrollY * 0.1) * 2.84;
 
+
+        //================================================
+        //         Scroll Spy Navegacion
+        // =============================================== 
         if (scroll >= 0 && scroll <= 820) {
             $(".scroll-hero").addClass("menu-active");
         } else {
@@ -131,8 +136,17 @@ jQuery(document).ready(function($) {
         } else {
             $(".scroll-contact").removeClass("menu-active");
         }
-    });
 
+        //================================================
+        //         Scroll global
+        // =============================================== 
+
+        $("#scrollbar-wrapper").css("height", vh + "px");
+    });
+    // PRE LOADER
+    $(window).load(function() {
+        $('.preloader').fadeOut(1000); // set duration in brackets    
+    });
 
     // jQuery counterUp
     $('[data-toggle="counter-up"]').counterUp({
