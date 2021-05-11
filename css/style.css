@@ -262,6 +262,8 @@ div.codepen:hover {
 
 div.codepen:hover svg {
     color: #000;
+    transition: all 3s;
+    transform: rotate(110deg);
 }
 
 div.codepen::before {
@@ -328,6 +330,8 @@ div.codepen:hover::after {
 
 #header #logo a:hover svg {
     color: #000;
+    transition: all 3s;
+    transform: rotate(110deg);
 }
 
 #header #logo a:hover .codepen {

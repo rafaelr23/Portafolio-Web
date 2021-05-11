@@ -140,8 +140,16 @@ jQuery(document).ready(function($) {
         //================================================
         //         Scroll global
         // =============================================== 
-
         $("#scrollbar-wrapper").css("height", vh + "px");
+
+
+        // var body = document.body,
+        //     html = document.documentElement;
+
+        // var height = Math.max(body.scrollHeight, body.offsetHeight,
+        //     html.clientHeight, html.scrollHeight, html.offsetHeight);
+
+        // console.log(height);
     });
     // PRE LOADER
     $(window).load(function() {
