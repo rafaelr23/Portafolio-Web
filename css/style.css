@@ -126,8 +126,8 @@ section {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    align-items: center;
     background: none repeat scroll 0 0 #ffffff;
+    align-items: center;
 }
 
 .spinner {
@@ -153,9 +153,8 @@ section {
 }
 
 @media (max-width: 768px) {
-    .spinner:before {
-        top: 25%;
-        left: 50%;
+    .preloader {
+        top: -20%;
     }
 }
 
