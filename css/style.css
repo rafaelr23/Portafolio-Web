@@ -152,6 +152,13 @@ section {
     animation: spinner .5s linear infinite;
 }
 
+@media (max-width: 768px) {
+    .spinner:before {
+        top: 25%;
+        left: 50%;
+    }
+}
+
 @-webkit-@keyframes spinner {
     to {
         transform: rotate(360deg);
@@ -263,7 +270,7 @@ div.codepen:hover {
 div.codepen:hover svg {
     color: #000;
     transition: all 3s;
-    transform: rotate(110deg);
+    transform: rotate(1510deg);
 }
 
 div.codepen::before {
@@ -331,7 +338,7 @@ div.codepen:hover::after {
 #header #logo a:hover svg {
     color: #000;
     transition: all 3s;
-    transform: rotate(110deg);
+    transform: rotate(410deg);
 }
 
 #header #logo a:hover .codepen {
@@ -997,6 +1004,71 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #portfolio .portfolio-item:hover img {
     top: -30px;
+}
+
+
+/* ================================================================= 
+                Portafolio Lsta
+================================================================*/
+
+ul.lista-precios>li {
+    padding: 10px;
+    border-radius: 25px;
+}
+
+@media screen and (min-width:768px) {
+    ul.lista-precios>li {
+        float: left;
+        width: 33.3%;
+    }
+}
+
+div.tabla-precio {
+    border: 1px solid #e1e1e1;
+    background-color: #ffffff;
+    padding: 40px 0px;
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    border-radius: 15px;
+}
+
+div.tabla-precio ul li {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #868686;
+    line-height: 26px;
+}
+
+div.tabla-precio ul li:before {
+    font-family: 'fontawesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 5px;
+    font-size: 20px;
+    color: green;
+    -webkit-font-smoothing: antialiased;
+    content: '\f00c';
+}
+
+div.tabla-precio:hover {
+    transform: scale(1.02);
+    border: 1px solid #DE401E;
+    box-shadow: 0px 0px 50px #666;
+    transition: all 0.5s ease-in-out;
+}
+
+div.tabla-precio h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+div.tabla-precio p.numero {
+    color: Black;
+    margin: 20px 0;
 }
 
 
