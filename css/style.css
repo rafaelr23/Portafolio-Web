@@ -919,7 +919,14 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding-right: 15px;
 }
 
-#portfolio #portfolio-flters {
+@media (max-width: 768px) {
+    #portfolio #portfolio-wrapper {
+        justify-content: center;
+    }
+}
+
+
+/* #portfolio #portfolio-flters {
     padding: 0;
     margin: 0 0 45px 0;
     list-style: none;
@@ -1004,13 +1011,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 #portfolio .portfolio-item:hover img {
     top: -30px;
 }
+ */
 
 
 /* ================================================================= 
                 Portafolio Lsta
 ================================================================*/
 
-ul.lista-precios>li {
+
+/* ul.lista-precios>li {
     padding: 10px;
     border-radius: 25px;
 }
@@ -1068,7 +1077,7 @@ div.tabla-precio h3 {
 div.tabla-precio p.numero {
     color: Black;
     margin: 20px 0;
-}
+} */
 
 
 /* Contact Section
