@@ -1,5 +1,7 @@
 jQuery(document).ready(function($) {
 
+
+
     // Header fixed and Back to top button
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
@@ -105,7 +107,9 @@ jQuery(document).ready(function($) {
     /* Scrollspy */
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
-        var vh = (window.scrollY * 0.1) * 2.84;
+        var vh = (window.scrollY * 0.1) * 2.81;
+        var vh2 = window.scrollY * 0.03
+        var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
 
         //================================================
@@ -140,6 +144,12 @@ jQuery(document).ready(function($) {
         //================================================
         //         Scroll global
         // =============================================== 
+
+        console.log({
+            "Scroll": scroll,
+            "vh": vh2,
+            "vh2": h
+        });
         $("#scrollbar-wrapper").css("height", vh + "px");
 
 
